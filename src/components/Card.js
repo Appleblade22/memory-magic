@@ -3,9 +3,10 @@ import './Card.css'
 
 export default function Card({card, src, turns, setTurns, handleChoice,flipped,disabled}) {
     const handleClick = () => {
-        setTurns(turns + 1);
+        
         if(!disabled){
             handleChoice(card);
+            setTurns(turns + 1);
         }
     }
 
